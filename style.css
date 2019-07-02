@@ -9,7 +9,11 @@ body {
 } */
 
 .alien {
-  max-width: 200px;
+  width: 20vw;
+}
+
+@media only screen and (max-width:500px) {
+  .alien {width: 100%;}
 }
 
 /* typography */
@@ -77,10 +81,6 @@ p {
   h5 {font-size: 1.125em;}
   
   small, .text_small {font-size: 0.889em;}
-
-  .alien {
-    max-width: 170px;
-  }
 }
 
 
@@ -112,15 +112,16 @@ html, body {
   .headerGridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px auto 200px;
+    grid-template-rows: 90px auto 1fr;
     grid-template-areas: "nameBox nameBox nameBox nameBox  navBar navBar navBar navBar" "aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox" "drawingBox drawingBox contactBox contactBox contactBox contactBox contactBox contactBox";
   }
   .nameBox {
     background-color: goldenrod;
   }
+
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:500px) {
   .headerGridContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -159,10 +160,10 @@ html, body {
   grid-area: drawingBox;
   border: solid orange;
   border-width: 0px 1px 1px 0px;
-  padding: 1.5em;
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 .contactBox {
   grid-area: contactBox;
@@ -213,10 +214,36 @@ html, body {
   justify-content: center;
 }
 
+@media only screen and (max-width:900px) {
+  .flexSwitch {
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+  } 
+  .flexSwitch > * + * {
+    margin-block-start: revert;
+    margin-left: 1em;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .flexSwitch {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  } 
+  .flexSwitch > * + * {
+    margin-block-start: 0;
+    margin-left: 0;
+  }
+}
+
 /* Images */
 
 img {
   max-width: 100%;
   max-height: 100%
 }
+
+
 
