@@ -263,7 +263,6 @@ body {
 
   .flexSwitch>*+* {
     margin-block-start: 0;
-    margin-left: 0;
   }
 }
 
@@ -372,6 +371,12 @@ border-left-width: 1px;
 .minisContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+@media only screen and (max-width:500px) {
+.minisContainer {
+  grid-template-columns: repeat(2, 1fr)
+}
 }
 
 .minisCase {
