@@ -14,7 +14,9 @@ body {
 }
 
 @media only screen and (max-width:500px) {
-  .alien {width: 100%;}
+  .alien {
+    width: 100%;
+  }
 }
 
 /* typography */
@@ -23,16 +25,23 @@ body {
   src: url('fonts/SpaceGrotesk-Bold.woff');
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'SpaceGrotesk-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
-h3, h4, h5 {
+h3,
+h4,
+h5 {
   font-family: 'DDINRegular';
   font-weight: normal;
   font-style: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 h1 {
@@ -40,24 +49,36 @@ h1 {
   font-size: 2.488em;
 }
 
-h2 {font-size: 2.074em;}
+h2 {
+  font-size: 2.074em;
+}
 
-h3 {font-size: 1.728em;}
+h3 {
+  font-size: 1.728em;
+}
 
-h4 {font-size: 1.44em;}
+h4 {
+  font-size: 1.44em;
+}
 
-h5 {font-size: 1.2em;}
+h5 {
+  font-size: 1.2em;
+}
 
-small, .text_small {font-size: 0.833em;}
+small,
+.text_small {
+  font-size: 0.833em;
+}
 
 p {
   font-family: 'DDINRegular';
   font-weight: normal;
   font-style: normal;
   font-size: 1.125rem;
+  margin-left: 1rem;
 }
 
-.box > * + * {
+.box>*+* {
   margin-top: 0;
 }
 
@@ -65,31 +86,41 @@ p {
 
 @media only screen and (max-width:1215px) {
 
-  .nameBox {
-    background-color: orange;
-  }
   h1 {
     margin-top: 0;
     font-size: 1.802em;
   }
-  
-  h2 {font-size: 1.602em;}
-  
-  h3 {font-size: 1.424em;}
-  
-  h4 {font-size: 1.266em;}
-  
-  h5 {font-size: 1.125em;}
-  
-  small, .text_small {font-size: 0.889em;}
+
+  h2 {
+    font-size: 1.602em;
+  }
+
+  h3 {
+    font-size: 1.424em;
+  }
+
+  h4 {
+    font-size: 1.266em;
+  }
+
+  h5 {
+    font-size: 1.125em;
+  }
+
+  small,
+  .text_small {
+    font-size: 0.889em;
+  }
 }
 
 
 
 /* whole page fixes */
-html, body {
+html,
+body {
   margin: 0px;
 }
+
 .fullWidthControl {
   margin: 1vw;
 }
@@ -97,16 +128,16 @@ html, body {
 /* header Grid boxes */
 .headerGridContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "nameBox nameBox nameBox nameBox nameBox navBar navBar navBar navBar" "aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox drawingBox drawingBox contactBox contactBox ";
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto auto;
+  grid-template-areas: "nameBox nameBox nameBox nameBox nameBox navBar navBar navBar navBar navBar""aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox drawingBox drawingBox contactBox contactBox contactBox";
 }
 
 .contactBox {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
-  grid-template-areas: "emailBox" "tweetBox";
+  grid-template-areas: "emailBox""tweetBox";
 }
 
 @media only screen and (max-width:900px) {
@@ -114,10 +145,7 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 90px auto 1fr;
-    grid-template-areas: "nameBox nameBox nameBox nameBox  navBar navBar navBar navBar" "aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox" "drawingBox drawingBox contactBox contactBox contactBox contactBox contactBox contactBox";
-  }
-  .nameBox {
-    background-color: goldenrod;
+    grid-template-areas: "nameBox nameBox nameBox nameBox  navBar navBar navBar navBar""aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox""drawingBox drawingBox contactBox contactBox contactBox contactBox contactBox contactBox";
   }
 
 }
@@ -127,16 +155,13 @@ html, body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 0.2fr 1fr 50vw;
-    grid-template-areas: "nameBox nameBox" "navBar navBar" "aboutmeBox aboutmeBox" "drawingBox contactBox";
-  }
-  .nameBox {
-    background-color: orangered;
+    grid-template-areas: "nameBox nameBox""navBar navBar""aboutmeBox aboutmeBox""drawingBox contactBox";
   }
 }
 
-.box {
+/* .box {
   padding: 0 0.5em 0 0.5em;
-}
+} */
 
 .nameBox {
   grid-area: nameBox;
@@ -166,15 +191,16 @@ html, body {
   align-items: center;
   justify-content: center;
 }
+
 .contactBox {
   grid-area: contactBox;
   border: solid red;
   border-width: 0px 1px 1px 0px;
 }
-
-.contactBox > * {
+/* 
+.contactBox>* {
   padding: 0 0.5em 0 0.5em;
-}
+} */
 
 .emailBox {
   grid-area: emailBox;
@@ -189,13 +215,13 @@ html, body {
   background-color: #FCFDD8;
 }
 
-.emailBox p {
+/* .emailBox p {
   font-size: 0.95em;
 }
 
 .tweetBox p {
   font-size: 0.95em;
-}
+} */
 
 /* header Grid fixes */
 
@@ -220,8 +246,9 @@ html, body {
     flex-flow: row;
     justify-content: flex-start;
     align-items: center;
-  } 
-  .flexSwitch > * + * {
+  }
+
+  .flexSwitch>*+* {
     margin-block-start: revert;
     margin-left: 1em;
   }
@@ -232,8 +259,9 @@ html, body {
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
-  } 
-  .flexSwitch > * + * {
+  }
+
+  .flexSwitch>*+* {
     margin-block-start: 0;
     margin-left: 0;
   }
@@ -254,9 +282,10 @@ img {
   border: solid #B2B2B2;
   border-width: 1px 1px 0.01px 1px;
   margin-bottom: 0;
+  /* padding-left: 1em; */
 }
 
-.divider + * {
+.divider+* {
   margin-top: 0;
 }
 
@@ -278,21 +307,22 @@ img {
   }
 }
 
-.caseText > * {
-padding-left: 0.5em;
-padding-right: 0.5em;
-max-width: 90%;
+.thumbText>* {
+  /* padding-left: 0.5em;
+  padding-right: 0.5em; */
+  /* max-width: 90%; */
 }
 
 /* Cases */
 
-.caseBox {
+.objectBox {
   border: solid #B2B2B2;
   border-width: 1px;
   /* border-right-color: transparent;
   border-bottom-color: transparent; */
   padding: 1em;
 }
+
 /* 
 .caseBox:first-child {
 border-left-width: 1px;
@@ -306,22 +336,22 @@ border-left-width: 1px;
   .caseBox {
     border-left-width: 1px;
   }
-  
+
 }
 
 
 .caseBox:hover {
   background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231c1c1c' fill-opacity='0.33' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231c1c1c' fill-opacity='0.33' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .caseContents {
   border: solid 1px #B2B2B2;
-  background:white;
+  background: white;
   height: 100%;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 0.5em;
 }
 
 @media only screen and (max-width:900px) {
@@ -331,8 +361,30 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 }
 
 
-.caseContents > img {
+.caseContents>img {
   padding-left: 0em;
   padding-right: 0em;
   min-width: 100%;
 }
+
+/* Minis */
+
+.minisContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.minisCase {
+  background: white;
+  border: 1px grey solid;
+  height: 100%;
+}
+
+.thumb {
+  padding-left: 0em;
+  padding-right: 0em;
+  min-width: 100%;
+}
+
+
+
