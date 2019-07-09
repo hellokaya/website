@@ -185,13 +185,13 @@ body {
 
 .nameBox {
   grid-area: nameBox;
-  border: solid green;
+  border: solid #B2B2B2;
   border-width: 1px 1px 1px 1px;
 }
 
 .navBar {
   grid-area: navBar;
-  border: solid royalblue;
+  border: solid #B2B2B2;
   border-width: 1px 1px 1px 0px;
 }
 
@@ -203,14 +203,14 @@ body {
 
 .aboutmeBox {
   grid-area: aboutmeBox;
-  border: solid red;
+  border: solid #B2B2B2;
   border-width: 0px 1px 1px 1px;
   background-color: #F5F687;
 }
 
 .drawingBox {
   grid-area: drawingBox;
-  border: solid orange;
+  border: solid #B2B2B2;
   border-width: 0px 1px 1px 0px;
   display: flex;
   flex-flow: column;
@@ -243,26 +243,26 @@ body {
 
 /* Border fixes */
 .contactBorders {
-  border: solid lightseagreen;
+  border: solid #B2B2B2;
   border-width: 0px 1px 1px 0px;
 }
 
 .caseBorders {
-  border: solid lightseagreen;
+  border: solid #B2B2B2;
   border-width: 0px 1px 1px 0px;
 }
 
 .casesContainer {
-  border-left: solid red 1px;
+  border-left: solid #B2B2B2 1px;
 }
 
 
 .minisContainer {
-  border-left: solid salmon 1px;
+  border-left: solid #B2B2B2 1px;
 }
 
 .miniBorders {
-  border: solid lightseagreen;
+  border: solid #B2B2B2;
   border-width: 0px 1px 1px 0px;
 }
 
@@ -316,7 +316,7 @@ img {
 
 .divider {
   border: solid #B2B2B2;
-  border-width: 1px 1px 0.01px 1px;
+  border-width: 1px 1px 1px 1px;
   margin-bottom: 0;
 }
 
@@ -407,7 +407,7 @@ img {
 
 .minisCase {
   background: white;
-  border: 1px grey solid;
+  border: 1px #B2B2B2 solid;
   height: 100%;
 }
 
