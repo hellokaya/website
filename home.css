@@ -28,8 +28,8 @@ body {
 h1,
 h2 {
   font-family: 'SpaceGrotesk-Bold', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 h3,
@@ -40,8 +40,8 @@ h5 {
   font-style: normal;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 h1 {
@@ -75,10 +75,10 @@ p {
   font-weight: normal;
   font-style: normal;
   font-size: 1.125rem;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
 }
 
-.box>*+* {
+.stack>*+* {
   margin-top: 0;
 }
 
@@ -110,19 +110,30 @@ p {
   .text_small {
     font-size: 0.889em;
   }
-  p{ 
+
+  p {
     font-size: 1rem;
   }
 }
 
 @media only screen and (max-width:500px) {
-h1, h2, h3, h4, h5, p{
-  margin-left: 0.25em;
-}
 
-p{
-  font-size: 0.9em;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    margin-left: 0.5rem;
+  }
+
+  .emailBox > * {
+    margin-left: 0.25rem;
+  }
+
+  .tweetBox > * {
+    margin-left: 0.25rem;
+  }
 }
 
 
@@ -171,9 +182,6 @@ body {
   }
 }
 
-/* .box {
-  padding: 0 0.5em 0 0.5em;
-} */
 
 .nameBox {
   grid-area: nameBox;
@@ -185,6 +193,12 @@ body {
   grid-area: navBar;
   border: solid royalblue;
   border-width: 1px 1px 1px 0px;
+}
+
+@media only screen and (max-width:500px) {
+.navBar {
+  border-width: 0px 1px 1px 1px;
+}
 }
 
 .aboutmeBox {
@@ -204,42 +218,54 @@ body {
   justify-content: center;
 }
 
+@media only screen and (max-width:900px) {
+.drawingBox {
+  border-width: 0px 1px 1px 1px
+} 
+}
+
 .contactBox {
   grid-area: contactBox;
-  border: solid red;
-  border-width: 0px 1px 1px 0px;
 }
-/* 
-.contactBox>* {
-  padding: 0 0.5em 0 0.5em;
-} */
 
 .emailBox {
   grid-area: emailBox;
-  border: solid red;
-  border-width: 0px 0px 1px 0px;
+  border: solid #B2B2B2 1px;
   background-color: #B96B9F;
   color: white;
 }
 
 .tweetBox {
   grid-area: tweetBox;
+  border: solid #B2B2B2 1px;
   background-color: #FCFDD8;
 }
 
-/* .emailBox p {
-  font-size: 0.95em;
+/* Border fixes */
+.contactBorders {
+  border: solid lightseagreen;
+  border-width: 0px 1px 1px 0px;
 }
 
-.tweetBox p {
-  font-size: 0.95em;
-} */
+.caseBorders {
+  border: solid lightseagreen;
+  border-width: 0px 1px 1px 0px;
+}
 
-/* header Grid fixes */
+.casesContainer {
+  border-left: solid red 1px;
+}
 
-/* .drawingBox {
-  min-height: 22.222vw;
-} */
+
+.minisContainer {
+  border-left: solid salmon 1px;
+}
+
+.miniBorders {
+  border: solid lightseagreen;
+  border-width: 0px 1px 1px 0px;
+}
+
 
 /* header centering */
 
@@ -262,7 +288,6 @@ body {
 
   .flexSwitch>*+* {
     margin-block-start: revert;
-    /* margin-left: 1em; */
   }
 }
 
@@ -293,7 +318,6 @@ img {
   border: solid #B2B2B2;
   border-width: 1px 1px 0.01px 1px;
   margin-bottom: 0;
-  /* padding-left: 1em; */
 }
 
 .divider+* {
@@ -327,39 +351,19 @@ img {
 /* Cases */
 
 .objectBox {
-  border: solid #B2B2B2;
-  border-width: 1px;
-  /* border-right-color: transparent;
-  border-bottom-color: transparent; */
-  padding: 1em;
+  padding: 1rem;
 }
-
-@media only screen and (max-width:500px) {
-.objectBox{
-  padding: 0.25em;
-}
-}
-
-
-.objectBox > * {
-width: 100%;
-height: 100%;
-}
-
-/* 
-.caseBox:first-child {
-border-left-width: 1px;
-} */
-/* 
-.caseBox:nth-child(3n+0) {
-  border-left-width: 1px;
-} */
 
 @media only screen and (max-width:500px) {
   .objectBox {
-    border-left-width: 1px;
+    padding: 0.5rem;
   }
+}
 
+
+.objectBox>* {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -373,7 +377,6 @@ border-left-width: 1px;
   background: white;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  grid-gap: 0.5em;
 }
 
 @media only screen and (max-width:900px) {
@@ -397,9 +400,9 @@ border-left-width: 1px;
 }
 
 @media only screen and (max-width:500px) {
-.minisContainer {
-  grid-template-columns: repeat(2, 1fr)
-}
+  .minisContainer {
+    grid-template-columns: repeat(2, 1fr)
+  }
 }
 
 .minisCase {
@@ -413,6 +416,3 @@ border-left-width: 1px;
   padding-right: 0em;
   min-width: 100%;
 }
-
-
-
