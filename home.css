@@ -1,5 +1,16 @@
 body {
   font-size: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+body > * {
+  max-width: 2000px;
+  width: 100%;
 }
 
 /* max width setting */
@@ -16,6 +27,12 @@ body {
 @media only screen and (max-width:500px) {
   .alien {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width:18 00px) {
+  .alien {
+    width: 10vw;
   }
 }
 
@@ -187,6 +204,12 @@ body {
   grid-area: nameBox;
   border: solid #B2B2B2;
   border-width: 1px 1px 1px 1px;
+}
+
+@media only screen and (max-width:1200px) and (min-width:500px){
+.nameBox {
+  background-color: #F5F687;
+}
 }
 
 .navBar {
