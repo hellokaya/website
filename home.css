@@ -8,7 +8,7 @@ body {
 
 }
 
-body > * {
+body>* {
   max-width: 2000px;
   width: 100%;
 }
@@ -30,7 +30,7 @@ body > * {
   }
 }
 
-@media only screen and (min-width:18 00px) {
+@media only screen and (min-width:1800px) {
   .alien {
     width: 10vw;
   }
@@ -144,11 +144,11 @@ p {
     margin-left: 0.5rem;
   }
 
-  .emailBox > * {
+  .emailBox>* {
     margin-left: 0.25rem;
   }
 
-  .tweetBox > * {
+  .tweetBox>* {
     margin-left: 0.25rem;
   }
 }
@@ -206,12 +206,6 @@ body {
   border-width: 1px 1px 1px 1px;
 }
 
-@media only screen and (max-width:1200px) and (min-width:500px){
-.nameBox {
-  background-color: #F5F687;
-}
-}
-
 .navBar {
   grid-area: navBar;
   border: solid #B2B2B2;
@@ -219,9 +213,9 @@ body {
 }
 
 @media only screen and (max-width:500px) {
-.navBar {
-  border-width: 0px 1px 1px 1px;
-}
+  .navBar {
+    border-width: 0px 1px 1px 1px;
+  }
 }
 
 .aboutmeBox {
@@ -242,9 +236,9 @@ body {
 }
 
 @media only screen and (max-width:900px) {
-.drawingBox {
-  border-width: 0px 1px 1px 1px
-} 
+  .drawingBox {
+    border-width: 0px 1px 1px 1px
+  }
 }
 
 .contactBox {
@@ -302,7 +296,14 @@ body {
   justify-content: center;
 }
 
-@media only screen and (max-width:900px) {
+
+.flexSwitch>*+* {
+  margin-block-start: 0;
+}
+
+
+@media only screen and (max-width:900px) and (min-width:500px) {
+
   .flexSwitch {
     flex-flow: row;
     justify-content: flex-start;
@@ -311,18 +312,6 @@ body {
 
   .flexSwitch>*+* {
     margin-block-start: revert;
-  }
-}
-
-@media only screen and (max-width:500px) {
-  .flexSwitch {
-    flex-flow: column;
-    justify-content: center;
-    align-items: flex-start;
-  }
-
-  .flexSwitch>*+* {
-    margin-block-start: 0;
   }
 }
 
