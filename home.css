@@ -8,16 +8,12 @@ body {
 
 }
 
+
+
 body>* {
   max-width: 2000px;
   width: 100%;
 }
-
-/* max width setting */
-
-/* .fullWidthControl {
-  max-width: 1200px;
-} */
 
 .alien {
   width: 20vw;
@@ -47,7 +43,10 @@ body>* {
   src: url('fonts/SpaceGrotesk-Regular.woff');
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   color: inherit;
 }
@@ -115,8 +114,7 @@ p {
 }
 
 
-@media only screen and (max-width:1215px) {
-
+@media screen and (max-width:1300px) {
   h1 {
     margin-top: 0;
     font-size: 1.802em;
@@ -437,4 +435,11 @@ img {
   padding-left: 0em;
   padding-right: 0em;
   min-width: 100%;
+}
+
+
+@media only screen and (max-width:768px) {
+  .navBar {
+    background-color: blue;
+  }
 }
