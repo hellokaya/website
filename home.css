@@ -33,14 +33,28 @@ body>* {
 
 /* typography */
 @font-face {
-  font-family: 'SpaceGrotesk-Medium';
-  src: url('fonts/SpaceGrotesk-Medium.woff');
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
+    url('fonts/SpaceGrotesk-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'SpaceGrotesk';
-  src: url('fonts/SpaceGrotesk-Regular.woff');
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-Regular.woff2') format('woff2'),
+    url('fonts/SpaceGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
+
+/* @font-face {
+  font-family: 'Space Grotesk';
+  src: url('fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
+    url('fonts/SpaceGrotesk-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+} */
 
 a,
 a:hover,
@@ -50,25 +64,25 @@ a:active {
   color: inherit;
 }
 
-/* strong {
-  font-family: 'SpaceGrotesk-Medium';
-} */
+b {
+  font-weight: 500;
+}
 
 h1,
 h2 {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-weight: normal;
+  font-weight: 500;
 }
 
+h2,
 h3,
 h4,
 h5 {
-  /* font-family: 'DDINRegular'; */
-  font-family: 'SpaceGrotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-top: 1rem;
@@ -76,35 +90,10 @@ h5 {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-/* 
-h1 {
-  margin-top: 0;
-  font-size: 2.488em;
-}
 
-h2 {
-  font-size: 2.074em;
-}
-
-h3 {
-  font-size: 1.728em;
-}
-
-h4 {
-  font-size: 1.44em;
-}
-
-h5 {
-  font-size: 1.2em;
-} */
-/* 
-small,
-.text_small {
-  font-size: 0.833em;
-} */
 
 p, small, .text_small {
-  font-family: 'SpaceGrotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-left: 1rem;
@@ -114,8 +103,6 @@ p, small, .text_small {
   margin-top: 0;
 }
 
-
-/* @media screen and (max-width:1300px) { */
   h1 {
     font-size: 1.802em;
   }
@@ -144,7 +131,23 @@ p, small, .text_small {
   p {
     font-size: 1rem;
   }
-/* } */
+
+  /* TEST CSS */
+
+  h1 {
+    font-size: 1.383em;
+  }
+  
+  h2 {font-size: 1.296em;}
+  
+  h3 {font-size: 1.215em;}
+  
+  h4 {font-size: 1.138em;}
+  
+  h5 {font-size: 1.067em;}
+  
+  small, .text_small {font-size: 0.937em;}
+
 
 @media only screen and (max-width:500px) {
 
