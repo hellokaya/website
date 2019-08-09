@@ -57,7 +57,7 @@ a:active {
   color: inherit;
 }
 
-b {
+b, strong {
   font-weight: 500;
 }
 
