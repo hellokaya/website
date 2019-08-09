@@ -48,13 +48,6 @@ body>* {
   font-style: normal;
 }
 
-/* @font-face {
-  font-family: 'Space Grotesk';
-  src: url('fonts/SpaceGrotesk-SemiBold.woff2') format('woff2'),
-    url('fonts/SpaceGrotesk-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-} */
 
 a,
 a:hover,
@@ -75,14 +68,13 @@ h2 {
   margin-right: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
-h2,
 h3,
 h4,
 h5 {
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-top: 1rem;
@@ -93,7 +85,7 @@ h5 {
 
 
 p, small, .text_small {
-  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Barlow', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: normal;
   font-style: normal;
   margin-left: 1rem;
