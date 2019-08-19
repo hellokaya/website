@@ -78,6 +78,11 @@ body {
   margin: 1vw;
 }
 
+.topWidthControl {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
 /* header Grid boxes */
 .headerGridContainer {
   display: grid;
@@ -252,6 +257,7 @@ img {
   border: solid #B2B2B2;
   border-width: 1px 1px 1px 1px;
   margin-bottom: 0;
+  box-sizing: border-box;
 }
 
 .divider+* {
