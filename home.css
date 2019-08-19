@@ -59,10 +59,12 @@ a:active {
 
   .emailBox>* {
     margin-left: 0.25rem;
+    margin-right: 0.25em;
   }
 
   .tweetBox>* {
     margin-left: 0.25rem;
+    margin-right: 0.25em;
   }
 }
 
