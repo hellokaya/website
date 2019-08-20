@@ -81,14 +81,14 @@ li {
 .gridContainer {
 	grid-template-columns: 1fr;
 	grid-auto-rows: auto;
-
+	border-left: solid #B2B2B2 1px;
 }
 
 
 
 /* responsive */
 /* This applies from 600px onwards */
-@media (min-width: 600px) {
+@media (min-width: 900px) {
 	.gridContainer {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -137,11 +137,11 @@ li {
 /* layout */
 
 .gridContainerLeft {
-    grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 2fr;
 }
 
 .gridContainerRight {
-    grid-template-columns: 2fr 1fr;
+	grid-template-columns: 2fr 1fr;
 }
 /* responsive */
 /* This applies from 600px onwards */
@@ -155,7 +155,7 @@ li {
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
     .gridContainer {
-        grid-gap: 3em;
+        grid-gap: 1em;
     }
 }
 
@@ -165,19 +165,21 @@ li {
 .imageContainer {
 	height: auto;
 	min-height: 100%;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
 }
-
-
-/* responsive */
-/* This applies from 600px onwards */
-@media (min-width: 600px) {
-
-}
-
-.cardBorders:nth-child(2) {
-	border-top: 0px;
-  }
 
 .coverImage > img {
 	max-height: 80vh;
+}
+
+.cardCentered {
+	align-items: center;
+}
+
+.gridNoGap {
+grid-gap: 0;
 }
