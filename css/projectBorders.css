@@ -164,7 +164,6 @@ li {
 
 .imageContainer {
 	height: auto;
-	min-height: 100%;
 	display: flex;
 	align-content: center;
 	align-items: center;
@@ -172,6 +171,9 @@ li {
 	justify-items: center;
 }
 
+.bottomLine{
+border-bottom: 1px solid #b2b2b2;
+}
 .coverImage > img {
 	max-height: 80vh;
 }
