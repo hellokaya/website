@@ -34,7 +34,7 @@
   }
 
   h1, h2, h3 {
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
   }
 
   h4 {
@@ -89,7 +89,6 @@
       margin-left: 1rem;
       margin-right: 1rem;
   }
-
 
   p,
   small,

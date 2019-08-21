@@ -74,10 +74,6 @@ body {
   margin: 0px;
 }
 
-.fullWidthControl {
-  margin: 1vw;
-}
-
 .topWidthControl {
   margin-top: 1vw;
   margin-bottom: 1vw;
@@ -188,11 +184,10 @@ body {
   border-top-color: transparent;
 }
 
-.cardBorders {
+.innerBorders {
   border: 1px solid #B2B2B2;
   border-left-color: transparent;
   border-top-color: transparent;
-
 }
 
 .cardsContainer {
@@ -257,6 +252,7 @@ img {
   border-width: 1px 1px 1px 1px;
   margin-bottom: 0;
   box-sizing: border-box;
+  margin-top: 1vw;
 }
 
 .divider+* {
