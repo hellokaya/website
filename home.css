@@ -103,7 +103,6 @@ body {
   .headerGridContainer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: 90px auto 1fr;
     grid-template-areas: "nameBox nameBox nameBox nameBox  navBar navBar navBar navBar""aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox""drawingBox drawingBox contactBox contactBox contactBox contactBox contactBox contactBox";
   }
 
