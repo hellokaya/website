@@ -20,19 +20,6 @@ body>* {
   object-fit: scale-down;
 }
 
-/* @media only screen and (max-width:600px) {
-  .alien {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width:1800px) {
-  .alien {
-    width: 10vw;
-  }
-} */
-
-
 
 a,
 a:hover,
@@ -203,6 +190,10 @@ body {
   border: solid #B2B2B2;
   border-width: 0px 1px 1px 0px;
 }
+
+.bottomLine{
+  border-bottom: 1px solid #b2b2b2;
+  }
 
 
 /* header centering */

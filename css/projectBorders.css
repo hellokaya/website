@@ -170,10 +170,6 @@ li {
 	justify-content: center;
 	justify-items: center;
 }
-
-.bottomLine{
-border-bottom: 1px solid #b2b2b2;
-}
 .coverImage > img {
 	max-height: 80vh;
 }
