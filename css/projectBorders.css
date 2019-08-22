@@ -81,7 +81,11 @@ li {
 .gridContainer {
 	grid-template-columns: 1fr;
 	grid-auto-rows: auto;
-	border-left: solid #B2B2B2 1px;
+	
+}
+
+.outerBorders{
+	border-left: solid #d1d1d1 1px;
 }
 
 

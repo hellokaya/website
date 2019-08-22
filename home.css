@@ -7,8 +7,6 @@ body {
   align-items: center;
 }
 
-
-
 body>* {
   max-width: 1650px;
   width: 95%;
@@ -103,13 +101,13 @@ body {
 
 .nameBox {
   grid-area: nameBox;
-  border: solid #B2B2B2;
+  border: solid #d1d1d1;
   border-width: 1px 1px 1px 1px;
 }
 
 .navBar {
   grid-area: navBar;
-  border: solid #B2B2B2;
+  border: solid #d1d1d1;
   border-width: 1px 1px 1px 0px;
 }
 
@@ -121,14 +119,14 @@ body {
 
 .aboutmeBox {
   grid-area: aboutmeBox;
-  border: solid #B2B2B2;
+  border: solid #d1d1d1;
   border-width: 0px 1px 1px 1px;
   background-color: #F5F687;
 }
 
 .drawingBox {
   grid-area: drawingBox;
-  border: solid #B2B2B2;
+  border: solid #d1d1d1;
   border-width: 0px 1px 1px 0px;
   display: flex;
   flex-flow: column;
@@ -147,7 +145,7 @@ body {
 }
 
 .contactInners {
-  border: solid #B2B2B2 1px;
+  border: solid #d1d1d1 1px;
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -166,33 +164,33 @@ body {
 
 /* Border fixes */
 .contactBorders {
-  border: solid 1px #B2B2B2;
+  border: solid 1px #d1d1d1;
   border-left-color: transparent;
   border-top-color: transparent;
 }
 
 .innerBorders {
-  border: 1px solid #B2B2B2;
+  border: 1px solid #d1d1d1;
   border-left-color: transparent;
   border-top-color: transparent;
 }
 
 .cardsContainer {
-  border-left: solid #B2B2B2 1px;
+  border-left: solid #d1d1d1 1px;
 }
 
 
 .minisContainer {
-  border-left: solid #B2B2B2 1px;
+  border-left: solid #d1d1d1 1px;
 }
 
 .miniBorders {
-  border: solid #B2B2B2;
+  border: solid #d1d1d1;
   border-width: 0px 1px 1px 0px;
 }
 
 .bottomLine{
-  border-bottom: 1px solid #b2b2b2;
+  border-bottom: 1px solid #d1d1d1;
   }
 
 
@@ -238,15 +236,15 @@ img {
 
 /* Dividing line between sections */
 
-.divider {
-  border: solid #B2B2B2;
+.solid {
+  border: solid #d1d1d1;
   border-width: 1px 1px 1px 1px;
   margin-bottom: 0;
   box-sizing: border-box;
   margin-top: 1vw;
 }
 
-.divider+* {
+.solid+* {
   margin-top: 0;
 }
 
@@ -293,7 +291,7 @@ img {
 }
 
 .caseContents {
-  outline: solid 1px #B2B2B2;
+  outline: solid 1px #d1d1d1;
   background: white;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -328,7 +326,7 @@ img {
 
 .minisCase {
   background: white;
-  border: 1px #B2B2B2 solid;
+  border: 1px #d1d1d1 solid;
   height: 100%;
 }
 
@@ -336,4 +334,9 @@ img {
   padding-left: 0em;
   padding-right: 0em;
   min-width: 100%;
+}
+
+.shadow{
+  /* box-shadow: 0px 0px 35px -10px rgba(209,209,209,0.95); */
+  border: 1px solid #d1d1d1;
 }
