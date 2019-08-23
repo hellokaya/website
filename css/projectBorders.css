@@ -47,31 +47,31 @@ li {
 
 
 .verticalSpace {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 /* responsive */
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
 	.verticalSpace {
-		margin-top: 40px;
-		margin-bottom: 40px;
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 
 }
 
 .verticalSpaceLarge {
-	margin-top: 40px;
-	margin-bottom: 40px;
+	padding-top: 3em;
+	padding-bottom: 3em;
 }
 
 /* responsive */
 /* This applies from 600px onwards */
 @media (min-width: 600px) {
 	.verticalSpaceLarge {
-		margin-top: 70px;
-		margin-bottom: 70px;
+		padding-top: 3em;
+		padding-bottom: 3em;
 	}
 }
 
@@ -120,6 +120,9 @@ li {
 	height: 100%;
 	width: 100%;
 	line-height: 0;
+	background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%231c1c1c' fill-opacity='0.33' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
 }
 
 .imageContainer img {
