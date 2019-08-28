@@ -122,6 +122,8 @@ body {
   border: solid #d1d1d1;
   border-width: 0px 1px 1px 1px;
   background-color: #F5F687;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .drawingBox {
