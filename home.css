@@ -121,7 +121,7 @@ body {
   grid-area: aboutmeBox;
   border: solid #d1d1d1;
   border-width: 0px 1px 1px 1px;
-  background-color: #F5F687;
+  background-color: #C7FFED;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -155,13 +155,14 @@ body {
 
 .emailBox {
   grid-area: emailBox;
-  background-color: #B96B9F;
+  background-color: #FF8552;
   color: white;
 }
 
 .tweetBox {
   grid-area: tweetBox;
-  background-color: #FCFDD8;
+  background-color: #4472CA;
+  color: white;
 }
 
 /* Border fixes */
