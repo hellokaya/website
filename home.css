@@ -347,3 +347,8 @@ img {
 .solid > *{
   font-weight: 600;
 }
+
+.h3list {
+  margin-block-start: 0;
+padding-inline-start: 1em;
+}
