@@ -128,6 +128,7 @@ li {
 .imageContainer img {
 	height: 100%;
 	width: 100%;
+	max-width: 1000px;
 	object-fit: scale-down;
 }
 
@@ -187,4 +188,8 @@ li {
 
 .gridNoGap {
 grid-gap: 0;
+}
+
+.innerBorders p{
+	margin-right: 2em;
 }
