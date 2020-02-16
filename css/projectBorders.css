@@ -16,8 +16,8 @@ li {
 }
 
 .eyebrow {
-	margin-bottom: 0px;
-	color: darkslategray;
+	/* margin-bottom: 0px; */
+	color: darkgoldenrod;
 }
 
 .eyebrow+* {

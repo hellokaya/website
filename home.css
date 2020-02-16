@@ -353,3 +353,7 @@ img {
   margin-block-start: 0;
 padding-inline-start: 1em;
 }
+
+.h3list > li {
+  margin-bottom: 0.5rem;
+}
