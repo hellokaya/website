@@ -6,6 +6,10 @@ a {
 	text-decoration: none;
 }
 
+.link {
+	color: blue;
+}
+
 ul {
 	padding-left: 1rem;
 	list-style: url('/img/ok.svg');
