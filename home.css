@@ -70,7 +70,7 @@ body {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto auto;
   grid-template-areas: "nameBox nameBox nameBox nameBox nameBox nameBox navBar navBar navBar navBar"
-  "aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox drawingBox drawingBox contactBox contactBox";
+    "aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox aboutmeBox drawingBox drawingBox contactBox contactBox";
 }
 
 .contactBox {
@@ -101,26 +101,26 @@ body {
 
 .nameBox {
   grid-area: nameBox;
-  border: solid #d1d1d1;
-  border-width: 1px 1px 1px 1px;
+  /* border: solid #d1d1d1;
+  border-width: 1px 1px 1px 1px; */
 }
 
 .navBar {
   grid-area: navBar;
-  border: solid #d1d1d1;
-  border-width: 1px 1px 1px 0px;
+  /* border: solid #d1d1d1;
+  border-width: 1px 1px 1px 0px; */
 }
 
-@media only screen and (max-width:600px) {
+/* @media only screen and (max-width:600px) {
   .navBar {
     border-width: 0px 1px 1px 1px;
   }
-}
+} */
 
 .aboutmeBox {
   grid-area: aboutmeBox;
-  border: solid #d1d1d1;
-  border-width: 0px 1px 1px 1px;
+  /* border: solid #d1d1d1;
+  border-width: 0px 1px 1px 1px; */
   background-color: #C7FFED;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -128,26 +128,26 @@ body {
 
 .drawingBox {
   grid-area: drawingBox;
-  border: solid #d1d1d1;
-  border-width: 0px 1px 1px 0px;
+  /* border: solid #d1d1d1;
+  border-width: 0px 1px 1px 0px; */
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
 }
 
-@media only screen and (max-width:950px) {
+/* @media only screen and (max-width:950px) {
   .drawingBox {
     border-width: 0px 1px 1px 1px;
   }
-}
+} */
 
 .contactBox {
   grid-area: contactBox;
 }
 
 .contactInners {
-  border: solid #d1d1d1 1px;
+  /* border: solid #d1d1d1 1px; */
   height: 100%;
   width: 100%;
   box-sizing: border-box;
@@ -166,7 +166,7 @@ body {
 }
 
 /* Border fixes */
-.contactBorders {
+/* .contactBorders {
   border: solid 1px #d1d1d1;
   border-left-color: transparent;
   border-top-color: transparent;
@@ -191,10 +191,11 @@ body {
   border: solid #d1d1d1;
   border-width: 0px 1px 1px 0px;
 }
+*/
 
-.bottomLine{
+.bottomLine {
   border-bottom: 1px solid #d1d1d1;
-  }
+}
 
 
 /* header centering */
@@ -240,8 +241,8 @@ img {
 /* Dividing line between sections */
 
 .solid {
-  border: solid #d1d1d1;
-  border-width: 1px 1px 1px 1px;
+  /* border: solid #d1d1d1;
+  border-width: 1px 1px 1px 1px; */
   margin-bottom: 0;
   box-sizing: border-box;
   margin-top: 1vw;
@@ -295,7 +296,7 @@ img {
 }
 
 .caseContents {
-  outline: solid 1px #d1d1d1;
+  /* outline: solid 1px #d1d1d1; */
   background: white;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -330,7 +331,7 @@ img {
 
 .minisCase {
   background: white;
-  border: 1px #d1d1d1 solid;
+  /* border: 1px #d1d1d1 solid; */
   height: 100%;
 }
 
@@ -340,20 +341,20 @@ img {
   min-width: 100%;
 }
 
-.shadow{
-  /* box-shadow: 0px 0px 35px -10px rgba(209,209,209,0.95); */
-  border: 1px solid #d1d1d1;
+.shadow {
+  box-shadow: 0px 0px 35px -10px rgba(209, 209, 209);
+  /* border: 1px solid #d1d1d1; */
 }
 
-.solid > *{
+/* .solid>* {
   font-weight: 600;
-}
+} */
 
 .h3list {
   margin-block-start: 0;
-padding-inline-start: 1em;
+  padding-inline-start: 1em;
 }
 
-.h3list > li {
+.h3list>li {
   margin-bottom: 0.5rem;
 }
