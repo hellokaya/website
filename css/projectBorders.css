@@ -49,33 +49,29 @@ li {
 	max-width: 1000px;
 }
 
-/* Replacement for verticalSpace */
+/* vertical Spacing */
 .gridContainer > * {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 }
+
+.verticalSpace {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 /* reponsive from 600px onwards */
 @media (min-width: 600px) {
 .gridContainer > * {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
+
+.verticalSpace {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
-
-
-/* .verticalSpace {
-	padding-top: 1em;
-	padding-bottom: 1em;
-} */
-
-/* responsive */
-/* This applies from 600px onwards */
-/* @media (min-width: 600px) {
-	.verticalSpace {
-		padding-top: 2em;
-		padding-bottom: 2em;
-	}
-}  */
+}
 
 .verticalSpaceLarge {
 	padding-top: 3em;
@@ -215,3 +211,5 @@ grid-gap: 0;
 .solid {
 	padding: 0.2rem;
 }
+
+.verticalSpaceLarge
