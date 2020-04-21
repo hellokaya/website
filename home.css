@@ -121,7 +121,7 @@ body {
   grid-area: aboutmeBox;
   /* border: solid #d1d1d1;
   border-width: 0px 1px 1px 1px; */
-  background-color: #C7FFED;
+  background-color: #fffcf2;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
@@ -246,7 +246,7 @@ img {
   margin-bottom: 0;
   box-sizing: border-box;
   margin-top: 1vw;
-  background-color: #fffcf2;
+  background-color: #cdfaff;
 }
 
 .solid+* {
