@@ -55,9 +55,18 @@ li {
 	padding-bottom: 1rem;
 }
 
+.flatContainer > * {
+	padding-top: 2rem;
+}
+
 .verticalSpace {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+}
+
+.verticalSpaceInner > * {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 /* reponsive from 600px onwards */
@@ -71,6 +80,12 @@ li {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 }
+
+.verticalSpaceInner > * {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
 }
 
 .verticalSpaceLarge {
