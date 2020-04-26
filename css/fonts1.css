@@ -2,7 +2,7 @@
 
   /* typography */
 
-  @font-face {
+  /* @font-face {
       font-family: 'Space Grotesk';
       src: url('../fonts/SpaceGrotesk-Medium.woff2') format('woff2'),
           url('../fonts/SpaceGrotesk-Medium.woff') format('woff'),
@@ -35,7 +35,7 @@
           url('../fonts/SpaceGrotesk-Bold.woff') format('woff'),
           url('../fonts/SpaceGrotesk-Bold.otf') format('otf');
       font-weight: 700;
-  }
+  } */
 
   h1, h2, h3 {
     letter-spacing: -0.015em;
